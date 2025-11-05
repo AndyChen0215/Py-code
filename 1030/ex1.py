@@ -10,7 +10,7 @@ elif (a + b > c) and (a + c > b) and (b + c > a):
         print('正三角形')
 
     # 等腰三角形
-    elif a == b or b == c:
+    elif a == b or b == c or a == c:
         print('等腰三角形')
         
     # 不等邊三角形
