@@ -51,7 +51,7 @@ while len(ans) < 4:
     # 隨機產生一個數字
     num = str(random.randint(0, 9))
     
-    # 4. 檢查這個數字是否「不在」字串裡
+    # 檢查這個數字是否「不在」字串裡
     if num not in ans:
         ans = ans + num
 
