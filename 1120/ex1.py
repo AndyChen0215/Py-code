@@ -5,10 +5,12 @@ print("--- 1A2B 猜數字遊戲 ---")
 answer_list = random.sample("0123456789", 4)
 ans = "".join(answer_list)
 
-# print(f"(測試用答案: {ans})")
+# ans = '5431'
+
+print(f"(測試用答案: {ans})")
 
 # guess_count = 0 # 用來計算猜了幾次
-while True:
+while 1:
     
     # 取得使用者的猜測
     guess = input("\n請猜一個 4 位數 (數字不重複)：")
@@ -27,8 +29,7 @@ while True:
         print("輸入錯誤：數字不能重複。")
         continue
 
-    # 檢查 A 和 B (原 check_guess() 的內容)
-    #    (重要) A 和 B 的計數器必須放在迴圈內，這樣「每一次」猜測都會重新歸零
+    #    A 和 B 的計數器必須放在迴圈內，這樣「每一次」猜測都會重新歸零
     a_count = 0
     b_count = 0
     
