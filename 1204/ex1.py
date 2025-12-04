@@ -1,11 +1,14 @@
-numbers = [33, 12, 56, 7, 99, 44, 18]
+numbers = input("請輸入數字(以空格隔開)\n").split(" ")
 
 # 建立空列表
 odds = []  # 存放奇數
 evens = []  # 存放偶數
 
 # 使用 for 迴圈遍歷列表
-for num in numbers:
+for num_str in numbers:
+
+    # 先將str型態轉換為int
+    num = int(num_str)
 
     # 判斷邏輯：檢查除以 2 的餘數
     if num % 2 == 0:
@@ -16,6 +19,5 @@ for num in numbers:
         odds.append(num)
 
 # 印出結果
-print(f"原始列表：{numbers}")
-print(f"偶數列表：{evens}")
-print(f"奇數列表：{odds}")
+print(f"奇數：{odds}")
+print(f"偶數：{evens}")
